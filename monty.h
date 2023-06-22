@@ -32,7 +32,7 @@ typedef struct globales_s
 
 } globales_t;
 
-extern globales_t globalvar = {NULL, NULL, NULL};
+extern globales_t globalvar;
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
