@@ -1,6 +1,8 @@
 #define  _POSIX_C_SOURCE 200809L
 #include "monty.h"
 
+ globales_t globalvar = {NULL, NULL, NULL};
+
 /**
  * main - entry point for the CLI program
  * @argc: count of arguments passed to the program
@@ -10,7 +12,6 @@
 
 int main(int argc, char **argv)
 {
-	globales_t globalvar = {NULL, NULL, NULL};
 	char *token = NULL;
 	size_t line_buf_size = 0;
 	int line_number = 0, flag = 0, flag2 = 0;
