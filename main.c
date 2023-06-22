@@ -1,7 +1,7 @@
 #define  _POSIX_C_SOURCE 200809L
 #include "monty.h"
 
- globales_t globalvar = {NULL, NULL, NULL};
+globales_t globalvar = {NULL, NULL, NULL};
 
 /**
  * main - entry point for the CLI program
