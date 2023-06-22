@@ -1,5 +1,5 @@
 #ifndef MONTY_H
-#define MMONTY_H
+#define MONTY_H
 
 #include <stdio.h>
 #include <string.h>
@@ -15,7 +15,7 @@
 #define DELIM " \n\t\a\b"
 
 /**
- * globales_s - struct with variable globals
+ * struct globales_s - struct with variable globals
  * @token2: integer
  * @fd: points to the previous element of the stack (or queue)
  * @line_buf: points to the next element of the stack (or queue)
@@ -23,6 +23,7 @@
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
+
 typedef struct globales_s
 {
 	char *token2;
@@ -31,7 +32,7 @@ typedef struct globales_s
 
 } globales_t;
 
-extern globales_t globalvar;
+extern globales_t globalvar = = {NULL, NULL, NULL};
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
