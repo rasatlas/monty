@@ -93,6 +93,13 @@ void rotr(stack_t **stack, unsigned int line_number);
 
 stack_t *create_node_stackfirst(stack_t **stack, int n);
 stack_t *create_node_stackend(stack_t **stack, int n);
+stack_t *add_dnodeint(stack_t **head, int n);
+
+/* stack.c */
+
+int create_node_stack(stack_t **stack);
+void free_node_stack(stack_t **stack);
+int check_opcode(stack_t *stack);
 
 /* opcodes_stderror.c */
 
@@ -129,6 +136,11 @@ void tokerr(int error_status);
 int _isdigit(void);
 char *get_int(int num);
 unsigned int abs_m(int i);
+
+/* utility_3.c */
+
+int len_buff_uint(unsigned int num, unsigned int base);
+void full_buff(unsigned int num, unsigned int base, char *buff, int buff_size);
 
 /* opcodes_handler.c */
 
