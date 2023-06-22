@@ -1,7 +1,5 @@
 #include "monty.h"
 
-globalvar = {NULL, NULL, NULL};
-
 /**
  * main - entry point for the CLI program
  * @argc: count of arguments passed to the program
