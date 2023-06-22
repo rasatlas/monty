@@ -115,12 +115,20 @@ void div_e(unsigned int line_number);
 void free_dlistint(stack_t *stack);
 void free_globalvars(void);
 
-/* utility.c */
+/* utility_1.c */
 int _isdigit(void);
 char *get_int(int num);
 unsigned int abs_m(int i);
 int len_buff_uint(unsigned int num, unsigned int base);
 void full_buff(unsigned int num, unsigned int base, char *buff, int buff_size);
+
+/* utility_2.c */
+
+unsigned int array_len(void);
+void tokerr(int error_status);
+int _isdigit(void);
+char *get_int(int num);
+unsigned int abs_m(int i);
 
 /* opcodes_handler.c */
 
