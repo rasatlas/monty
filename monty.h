@@ -138,11 +138,6 @@ int _isdigit(void);
 char *get_int(int num);
 unsigned int abs_m(int i);
 
-/* utility_3.c */
-
-int len_buff_uint(unsigned int num, unsigned int base);
-void full_buff(unsigned int num, unsigned int base, char *buff, int buff_size);
-
 /* opcodes_handler.c */
 
 int get_builtin(char *token, stack_t **stack, unsigned int line_number);
